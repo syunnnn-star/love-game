@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:sans-serif;
+    overflow:hidden;
+}
+
+#background{
+    position:fixed;
+    inset:0;
+    background-size:cover;
+    background-position:center;
+}
+
+#character{
+    position:absolute;
+    bottom:120px;
+    left:50%;
+    transform:translateX(-50%);
+    height:70vh;
+    max-width:90%;
+}
+
+#messageBox{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:rgba(0,0,0,0.75);
+    color:white;
+    padding:20px;
+}
+
+#speaker{
+    font-size:20px;
+    font-weight:bold;
+}
+
+#text{
+    margin-top:10px;
+    line-height:1.8;
+}
+
+#choices button{
+    width:100%;
+    margin-top:10px;
+    padding:12px;
+    font-size:16px;
+}
+
+#nextBtn{
+    margin-top:15px;
+    padding:10px 25px;
+}
+
+#nameScreen{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}

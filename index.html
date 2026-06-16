@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ゆめとの恋</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="nameScreen">
+    <h1>ゆめとの恋</h1>
+
+    <input type="text" id="playerName" placeholder="名前を入力">
+    <button onclick="startGame()">スタート</button>
+</div>
+
+<div id="game" style="display:none;">
+
+    <div id="background"></div>
+
+    <img id="character" src="images/yume_normal.png">
+
+    <div id="messageBox">
+
+        <div id="speaker">ゆめ</div>
+
+        <div id="text"></div>
+
+        <div id="choices"></div>
+
+        <button id="nextBtn" onclick="nextScene()">
+            次へ
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
